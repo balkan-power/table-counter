@@ -14,4 +14,11 @@ int main() {
     int tableResult = i * tableNum;
     cout << i << " * " << tableNum << " = " << tableResult << "\n";
   }
+  
+  cin.ignore(); // ignore leftover newline input buffer,
+  // or else it will not stop but continue and exit out of .exe file
+  cout << "\nPress Enter to exit...";
+  cin.get();
+
+  return 0;
 }
